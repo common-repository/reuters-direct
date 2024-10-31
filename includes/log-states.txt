@@ -1,0 +1,19 @@
+Reuters WordPress Direct: Log States
+
+<< Type: Error >>
+[Login Error] User not logged in
+[Settings Error] No channels selected
+[Exceeded Max Execution Time Error] Cron job timeout
+[Connection Error] name lookup timed out
+[Connection Error] connect() timed out!
+[Connection Error] Recv failure: Connection reset by peer
+[Connection Error] A valid URL was not provided
+[Connection Error] Operation timed out after XXXX milliseconds with XX bytes received
+
+<< Type: Notice >>
+[Directory Creation] Creating local directory for media download
+[Clearing Old Log Files] log_date.txt file removed
+[Previous Cron Job Still Running] Cron job skipped
+[Handling Incomplete Cron Jobs] Lock file removed
+
+

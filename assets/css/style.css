@@ -1,0 +1,287 @@
+/* General */
+html{
+ 	overflow:scroll;
+ }
+#Reuters_Direct_Settings{
+	background: #ffffff;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#Reuters_Direct_Settings a{
+	box-shadow: none;
+}
+#Reuters_Direct_Settings #setting-error-settings_updated{
+	margin-top: 0;
+}
+
+/* Header */
+#rd_header {
+	height: 50px;
+	position: relative;
+	background-color: #222;
+	z-index: 45;
+	background: url(bg.gif) repeat-x;
+}
+#rd_header h1 {
+	padding: 0px;
+	display: inline-block;
+}
+#rd_header h1 span {
+	width: 300px;
+	height: 16px;
+	margin: 17px 20px;
+	text-indent: -9999px;
+	background: url(rwd_logo.png) no-repeat;
+	display: inline-block;
+}
+
+#rd_header span {
+	float: right;
+	padding: 16px 20px 16px 0px;
+}
+
+#rd_header span a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+#rd_header form {
+	display: inline-block;
+	float: right;
+}
+
+@media (max-width: 767px) {
+	#rd_header span, #rd_header form {
+		display: none;
+	}
+}
+
+/* Sub Header */
+#rd_subheader{
+	color:#505050;
+	font-size: 12px;
+	text-align: right;
+	background: url(bg.gif) repeat-x;
+	height: 33px;
+	position: relative;
+	z-index: 32;
+	background-position: 0 -129px;
+	background-color: #828282;
+	padding: 0 20px;
+}
+#rd_subheader span{
+	color:#397c2b;
+	cursor: default;
+}
+#rd_subheader b{
+	padding: 8px 0;
+	display: block;
+}
+#rd_subheader a{
+	color: #a00000;
+	text-decoration: none;
+}
+
+/* Login Form */
+.rd_form #rd_formheader {
+    background: #444;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+.rd_form #rd_formheader span {
+	padding-left: 5px;
+	text-transform: none;
+	color: #ff9100;
+	font-size: 10px;
+}
+#rd_login p{
+	padding: 20px 30px 0px 30px;
+	margin: 0;
+	color: #333;
+}
+#rd_login p a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #ff9100;
+}
+.rd_form table.form-table{
+	margin-top: 20px;
+}
+.rd_form table.form-table th{
+	display: none;
+}
+.rd_form td{
+	padding: 0;
+}
+.rd_form #username_field, .rd_form #password_field{
+	width: 300px;
+	padding: 5px;
+}
+.rd_button{
+	background: #ff9100;
+	color:#ffffff;
+	border:none;
+	height: 30px;
+	margin: 0 0 20px 30px;
+	padding: 0 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.rd_button_alt{
+	background: #0073aa;
+	margin: 10px 20px;
+}
+
+/* Settings Form */
+.settings{
+	margin: 0px 30px 20px 30px;
+	background: #F1F1F1;
+}
+.settings #channel_filter{
+	background: #FFFFFF;
+	margin: 15px 15px 0px 15px;
+	border: 1px solid #999;
+	padding: 8px;
+	font-size: 12px;
+}
+.settings #channel_filter span{
+	padding: 8px;
+}
+.settings #channel_filter .category{
+	color: #0074a2;
+	font-weight: bold;
+	text-decoration: none;
+}
+.settings #channel_filter .selected{
+	color: #ff9000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.channels, .setting_option{
+	width: 100%;
+	border-spacing: 0;
+	padding: 15px;
+}
+.channels td, .setting_option td{
+	width: 50%;
+	padding: 6px 4px;
+	font-size: 12px;
+}
+.channels td.header{
+	font-weight: bold;
+	background: #F1F1F1 !important;
+}
+.channels tr:nth-child(odd) td, #rd_settings .setting_option tr:nth-child(odd) td {
+    background: #CCC;
+}
+p.category_info{
+	font-size: 11px !important;
+	color: #0074a2;
+	padding: 0 20px;
+	display:none;
+	text-align: justify;
+}
+
+p.warning_info{
+	margin: 0px !important;
+	padding: 0px 20px 15px 20px;
+	font-size: 12px !important;
+	font-weight: bold;
+}
+
+/* Footer */
+#rd_footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 47px;
+    font-size: 10px;
+    background-color: #333;
+    color: #fff;
+}
+#rd_footer p {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 16px;
+    margin: 0;
+    font-size: inherit;
+}
+#rd_footer a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Tags */
+.tag.label {
+    display: inline-block;
+    padding: 2px 0px 2px 5px;
+    margin: 2px 5px 2px 0px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+.tag.label-info {
+	border: 1px solid #b4b9be;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: default;
+}
+.bootstrap-tagsinput {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+  width: 100%;
+  line-height: 22px;
+  cursor: text;
+}
+.bootstrap-tagsinput input {
+  background-color: #fff;
+  border: 1px solid #b4b9be;
+  border-radius: 4px;
+  font-size: 12px;
+  box-shadow: none;
+  outline: none;
+  padding: 2px 0px 2px 5px;
+  margin-right: 5px;
+  width: 125px;
+  max-width: inherit;
+  line-height: 1;
+  min-height: 20px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  padding: 5px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  color: #0074a2;
+  font-weight: bold;
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* Media Queries */
+@media screen and (max-width: 782px) {
+    #rd_header select, #rd_footer p{
+    	display: none;
+    }
+    .channels td, .setting_option td{
+    	width: 100%;
+    }
+}
